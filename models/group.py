@@ -14,11 +14,8 @@ class AccessGroup(models.Model):
     is_active = fields.Boolean('Active', default=True, help='Si coché, ce groupe est disponible pour la configuration')
     
     # Contrôle d'accès aux vues (flexible)
-    view_ids = fields.Many2many('ir.ui.view', 'Vues disponibles', help='Vues auxquelles ce groupe a accès')
-    default_access_mode = fields.Selection([
-        ('allow', 'Autoriser'),
-        ('deny', 'Refuser')
-    ], string='Mode d\'accès par défaut', default='allow', help='Mode d\'accès par défaut pour les utilisateurs non-membres')
+    # Pour simplifier, nous n'avons pas de modèle de vue dans cette version
+    # Les vues Odoo sont gérées par les permissions Odoo standards (ir.module.category, ir.ui.view, ir.rule)
     
     # Utilisateurs dans le groupe
     user_ids = fields.Many2many('res.users', 'Membres', domain=[('active', '=', True)], help='Utilisateurs dans ce groupe')

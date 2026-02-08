@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    <data noupdate="1">
         <!-- Menu: Groupes d'Accès -->
         <menuitem id="menu_access_groups" name="Groupes d'Accès" 
                     parent="base.menu_administration" 
@@ -16,14 +16,6 @@
             <field name="view_mode">tree,form</field>
             <field name="domain">[('is_active', '=', True)]</field>
             <field name="help">Gérer les groupes d'accès pour contrôler qui peut voir les vues Odoo</field>
-        </record>
-        
-        <!-- Action: Access Group Dashboard -->
-        <record id="action_access_dashboard" model="ir.actions.act_window">
-            <field name="name">Tableau de Bord Groupes</field>
-            <field name="res_model">access.group</field>
-            <field name="view_mode">dashboard</field>
-            <field name="help">Tableau de bord pour les groupes d'accès</field>
         </record>
     </data>
 </odoo>

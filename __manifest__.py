@@ -1,8 +1,8 @@
 {
     "name": "sad_dev_groupe_secur",
     "version": "1.0.1",
-    "summary": "Module de gestion de groupe pour Odoo - VERSION SIMPLE ET SÛRE",
-    "description": "Module simple de gestion de groupe pour Odoo. Permet de créer des groupes et de contrôler l'accès aux vues de modules.",
+    "summary": "Module de gestion de groupe pour Odoo - VERSION SIMPLE ET SÛRE - CIRCULAR IMPORTS FIXÉES",
+    "description": "Module simple de gestion de groupe pour Odoo. Permet de créer des groupes et de contrôler l'accès aux vues de modules. Corrigé: Suppression des importations circulaires causant des erreurs Odoo.",
     "author": "Teo",
     "maintainers": [],
     "license": "LGPL-3",
